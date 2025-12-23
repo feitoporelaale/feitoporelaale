@@ -9,15 +9,15 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #f9f9f9;
+      background: #f5f5f5;
       color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #ffcc00, #ff9900);
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #ffe600, #ee4d2d);
+      padding: 45px 20px;
       text-align: center;
-      color: #fff;
+      color: #222;
     }
 
     header h1 {
@@ -26,88 +26,60 @@
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 1.1em;
+      font-weight: 500;
     }
 
     section {
       padding: 40px 20px;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      text-align: center;
     }
 
     .card {
       background: #fff;
-      border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transition: transform .3s;
+      border-radius: 18px;
+      padding: 35px 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    .card:hover {
-      transform: translateY(-6px);
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.6em;
     }
 
-    .btn {
+    .card p {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    .btn-instagram {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 18px;
-      background: #ff9900;
-      color: #fff;
+      margin-top: 25px;
+      padding: 16px 32px;
+      background: linear-gradient(135deg, #ffe600, #ee4d2d);
+      color: #222;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 40px;
+      font-size: 1.1em;
       font-weight: bold;
-      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .btn.ml {
-      background: #ffe600;
-      color: #333;
-    }
-
-    .btn.shopee {
-      background: #ee4d2d;
-    }
-
-    .btn.instagram {
-      background: #C13584;
+    .btn-instagram:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
     footer {
       background: #222;
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 18px;
       font-size: 0.9em;
-    }
-
-    .avaliacao {
-      font-style: italic;
-      background: #fafafa;
-      border-left: 4px solid #ff9900;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    .cidades {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
-    }
-
-    .cidade {
-      background: #ffefcc;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 0.9em;
-      font-weight: bold;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -115,114 +87,31 @@
 <body>
 
 <header>
-  <h1>✨ Meu Cantinho de Indicações & Serviços</h1>
-  <p>Achadinhos com qualidade + serviços feitos com carinho, respeito e confiança</p>
-  <p><strong>Atendimento nas cidades:</strong> Jaguariúna • Campinas • Mogi Mirim • Mogi Guaçu • Pedreira • Holambra</p>
+  <h1>✨ Achadinhos & Serviços de Confiança</h1>
+  <p>Produtos bem avaliados + serviços feitos com cuidado, respeito e confiança</p>
 </header>
 
 <section>
-  <h2>📍 Área de Atendimento</h2>
-  <div class="cidades">
-    <div class="cidade">Jaguariúna</div>
-    <div class="cidade">Campinas</div>
-    <div class="cidade">Mogi Mirim</div>
-    <div class="cidade">Mogi Guaçu</div>
-    <div class="cidade">Pedreira</div>
-    <div class="cidade">Holambra</div>
-  </div>
-</section>
+  <div class="card">
+    <h2>📲 Orçamentos, dúvidas e atendimento</h2>
+    <p>
+      Clique no botão abaixo para falar comigo diretamente pelo Instagram.<br>
+      Atendimento rápido, humanizado e sem complicação.
+    </p>
 
-<section>
-  <h2>🛒 Indicações Mercado Livre & Shopee</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Mercado Livre</h3>
-      <p>Produtos testados, bem avaliados e com ótimo custo-benefício.</p>
-      <a href="https://mercadolivre.com/sec/1Fbod2N" target="_blank" class="btn ml">
-        Ver achadinhos
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Shopee</h3>
-      <p>Garimpo diário de ofertas, novidades e achadinhos com qualidade.</p>
-      <a href="https://collshp.com/indicacoesale?share_channel_code=1" target="_blank" class="btn shopee">
-        Ver achadinhos
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>🏠 Serviços Residenciais por Mulher</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Reparos & Manutenção Residencial</h3>
-      <ul>
-        <li>Troca de torneira e sifão</li>
-        <li>Instalação de filtro de água</li>
-        <li>Tomadas, lâmpadas e chuveiro</li>
-        <li>Reparos gerais em sua casa</li>
-        <li>Manutenção básica em notebooks</li>
-      </ul>
-      <p><strong>Diferencial:</strong> serviço feito por mulher, com empatia e confiança.</p>
-      <a href="https://www.instagram.com/indicacoesshopeeemlale/" target="_blank" class="btn instagram">
-        Solicitar orçamento no Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>🩺 Acompanhamento para Consultas & Exames</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Atendimento humanizado para consultas e exames médicos.</p>
-      <a href="https://www.instagram.com/indicacoesshopeeemlale/" target="_blank" class="btn instagram">
-        Solicitar acompanhamento no Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>🚗 Motorista Particular</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Consultas, exames, viagens e <strong>transalado</strong> com conforto e segurança.</p>
-      <a href="https://www.instagram.com/indicacoesshopeeemlale/" target="_blank" class="btn instagram">
-        Agendar no Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>🐶 Cuidado com Animais Domésticos</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Cuidado com cães e gatos durante viagens, com carinho e responsabilidade.</p>
-      <a href="https://www.instagram.com/indicacoesshopeeemlale/" target="_blank" class="btn instagram">
-        Orçamento no Instagram
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>📸 Me acompanhe no Instagram</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Dicas, bastidores, rotina real e achadinhos.</p>
-      <a href="https://www.instagram.com/indicacoesshopeeemlale/" target="_blank" class="btn instagram">
-        Ir para o Instagram
-      </a>
-    </div>
+    <!-- BOTÃO ÚNICO -->
+    <a
+      href="https://ig.me/m/indicacoesshopeeemlale"
+      target="_blank"
+      class="btn-instagram"
+    >
+      👉 Pedir orçamento pelo Instagram
+    </a>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 - Meu Cantinho | Indicações e Serviços de Confiança</p>
+  <p>© 2025 - Achadinhos & Serviços de Confiança</p>
 </footer>
 
 </body>
